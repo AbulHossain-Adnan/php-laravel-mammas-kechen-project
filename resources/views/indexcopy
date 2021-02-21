@@ -1,0 +1,51 @@
+<section id="menu-list" class="menu-list">
+    <div class="container">
+        <div class="row menu">
+            <div class="col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2 col-xs-12">
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <?php foreach ($catugoris as $catugori): ?>
+                        <div class="row">
+
+                            <div class="menu-catagory">
+                                <h2>{{$catugori->name}}</h2>
+                            </div>
+
+                        </div>
+                        <?php endforeach; ?>
+                        <?php foreach ($dish_items as $dish_item): ?>
+
+
+                        <div class="row">
+                            <div class="menu-item">
+                                <h3 class="menu-title">{{$dish_item->name}}</h3>
+                                <p class="menu-about">Astronomy compels the soul</p>
+
+                                <div class="menu-system">
+                                    <div class="half">
+                                        <p class="per-head">
+                                            <span><i class="fa fa-user"></i></span>1:1
+                                        </p>
+                                    </div>
+                                    <div class="half">
+                                        <p class="price">$149.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+
+                    </div>
+
+                </div>
+
+                <div id="moreMenuContent"></div>
+                <div class="text-center">
+                    <a id="loadMenuContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
